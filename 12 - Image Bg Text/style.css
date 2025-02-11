@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Abril Fatface', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6b8cbd;
+}
+
+.heading {
+    font-size: 15rem;
+    font-weight: 900;
+    background: url('photo-1738941316860-fa7065bd2518.avif');
+    background-size: cover;
+    background-position: center;
+    background-position-y: -1000px;
+    background-clip: text  ;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
