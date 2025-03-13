@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ddd;
+  background-image: url("https://images.unsplash.com/photo-1691137493205-111951566e72?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quote-container {
+  padding: 5rem;
+  position: relative;
+}
+
+#quoteOutput {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  line-height: 50px;
+  font-size: 2rem;
+  margin-top: 2rem;
+  width: 800px;
+  color: #fff;
+}
+
+#authorOutput {
+  position: relative;
+  margin-top: 5rem;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+span:before {
+  content: "\201c";
+  font-size: 10rem;
+  font-family: sans-serif;
+  color: #fdbb11;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  animation: anime 1s ease-out;
+}
+
+span,
+small {
+  font-weight: bold;
+  animation: anime 1s ease-out;
+}
+
+@keyframes anime {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: #fdbb11;
+  border: 1px solid rgb(92, 90, 86);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f3d381;
+  color: black;
+  transition: all 1s ease-in-out;
+}
