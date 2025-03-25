@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #923030;
+    font-family: sans-serif;
+    perspective: 1000px;
+}
+
+.content {
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    position: relative;
+    padding-bottom: 5rem;
+    transform-origin: center left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* JS */
+
+.content.active {
+    transform: translateX(200px) rotateY(20deg);
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    background: #292929;
+    padding: 5rem;
+    color: #fff;
+}
+
+.container h1 {
+    margin-bottom: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 2rem;
+    outline: none;
+    height: 30px;
+    padding: 15px;
+
+}
+
+form label .special {
+    color: crimson;
+}
+
+.sidebar {
+    background-color: #808080;
+    color: #fff;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    transform: translateX(-200px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+/* JS */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.sidebar .menu .fa-bars {
+    display: block;
+}
+
+.sidebar .menu .fa-times {
+    display: none;
+}
+
+/* JS */
+.sidebar.active .menu .fa-bars {
+    display: none;
+}
+
+.sidebar.active .menu .fa-times {
+    display: block;
+}
+
+.menu {
+    background-color: rgba(236, 10, 55, 0.911);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    right: -30px;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
