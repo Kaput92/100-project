@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #40596d;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+    padding: 2em;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.output {
+    margin-top: 2em;
+}
+
+.todo {
+    border-left: 4px solid #00ddff;
+    color: rgb(75, 75, 75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 1em;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.delete {
+    color: rgb(255, 0, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.message-container {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    background-color: #fff;
+    padding: 20px;
+    transform: translateX(0);
+    visibility: hidden;
+    transition: transform 1s ease;
+}
+
+.success {
+    transform: translateX(100px);
+    visibility: visible;
+    background-color:rgb(5, 177, 43);
+    color: #fff;;
+    border-radius: 10px;
+}
+
+.error {
+    transform: translateX(100px);
+    visibility: visible;
+    background-color: rgb(242, 49, 49);
+    color: #fff;
+    border-radius: 10px;
+}
+
