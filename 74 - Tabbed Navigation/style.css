@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: blueviolet;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.tabbed-container {
+  position: relative;
+}
+
+.tabbed-container .menu_Links {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.menu_Links ul {
+  list-style: none;
+}
+
+.menu_Links ul li {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media (max-width: 567px) {
+  .menu_Links ul li {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.menu_Links ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.menu_Links ul li.active,
+.menu_Links ul li.hover {
+  background: rgb(12, 9, 9);
+  color: #fff;
+}
+
+.sections section:not(.visible) {
+  display: none;
+}
+
+.sections .visible {
+  animation: feedIn 1s;
+}
+
+@keyframes feedIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sections > section {
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  margin: 60px auto 0;
+  background-color: #f5f7fa;
+  position: relative;
+}
+
+.sections .about_section {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.about_section h2 {
+  padding: 40px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.sections .about_section p {
+  text-align: justify;
+}
+
+@media (max-width: 567px) {
+  .about_section h2 {
+    padding: 20px;
+    font-size: 25px;
+  }
+}
+
+.about_section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 567px) {
+  .about_section img {
+    width: 80%;
+    height: 20%;
+    border-radius: 4px;
+  }
+}
+
+.about_section h4 {
+  font-weight: 100;
+  padding: 20px;
+}
+
+.about_section p {
+  width: 80%;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin: auto;
+  color: #706f6f;
+}
+
+@media (max-width: 567px) {
+  .about_section p {
+    width: 100%;
+  }
+}
+
+.sections .courses_section {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.courses_section h2 {
+  padding: 40px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media (max-width: 567px) {
+  .courses_section h2 {
+    padding: 20px;
+    font-size: 25px;
+  }
+}
+
+.courses_section div {
+  box-shadow: 1px 1px 5px 2px #ccc;
+  text-align: center;
+  width: 45%;
+  padding: 10px;
+  display: inline-block;
+  margin: o auto 0 10px;
+  margin: 20px;
+}
+
+@media (max-width: 567px) {
+  .courses_section div {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.courses_section div img {
+  width: 50%;
+  padding-top: 20px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.courses_section div h4 {
+  padding: 10px;
+}
+
+.sections .contact_section {
+  margin-top: 100px;
+  padding-bottom: 50px;
+}
+
+.contact_section h2 {
+  padding: 20px 20px 30px 20px;
+  font-weight: bold;
+}
+
+.contact_section .social_links a {
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 2px #ccc;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  transition: .5s;
+}
+
+.contact_section .social_links a:hover {
+  opacity: 0.8;
+}
+
+.contact_section .social_links a:first-child {
+  background-color: #1da1f2;
+}
+
+.contact_section .social_links a:nth-child(2) {
+  background-color: #181931e0;
+}
+
+.contact_section .social_links a:nth-child(3) {
+  background-color: #c32a2a;
+}
+
+@media (max-width: 567px) {
+  .contact_section .social_links a {
+    display: block;
+    margin: 10px;
+  }
+}
