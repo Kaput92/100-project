@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080809;
+  background: linear-gradient(rgb(43, 116, 226), rgb(20, 5, 154));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 600px;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+label {
+    text-shadow: 1px 1px 5px #000;
+}
+
+.table {
+  background: rgba(56, 57, 70, 0.733);
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.table-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+#book-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow: hidden;
+  word-wrap: break-word;
+  background: #fff;
+  color: #000;
+}
+
+#book-list:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#book-list > section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.btn {
+  background: rgb(7, 23, 39);
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
