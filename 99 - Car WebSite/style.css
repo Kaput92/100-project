@@ -847,6 +847,7 @@ video {
   }
 
   .about__video {
+    margin-top: 20px; /* added after for adjustment on scroll animation */
     width: 450px;
     height: 570px;
   }
