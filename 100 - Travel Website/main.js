@@ -34,6 +34,7 @@ const swiperHome = new Swiper('.home__swiper', {
 
   loop: true,
   slidesPerView: 'auto',
+  grabCursor: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -47,10 +48,32 @@ const swiperHome = new Swiper('.home__swiper', {
 });
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-
+const bgHeader = () =>{
+    const header = document.getElementById('header')
+    // Add a class if the bottom offset is greater than 50 of the viewport
+    this.scrollY >= 50 ? header.classList.add('bg-header') 
+                       : header.classList.remove('bg-header')
+}
+window.addEventListener('scroll', bgHeader)
 
 /*=============== SWIPER TESTIMONIAL ===============*/
+const swiperTestimonial = new Swiper('.testimonial__swiper', {
 
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 48,
+  grabCursor: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  /* autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  }, */
+});
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
