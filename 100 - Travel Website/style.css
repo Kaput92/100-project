@@ -608,6 +608,8 @@ img {
 }
 
 .join__button {
+  width: 100%;
+  margin-top: 1rem;
   padding-block: 1.25rem;
   cursor: pointer;
 }
